@@ -1,0 +1,34 @@
+
+@api = http://localhost:3001/products
+
+
+POST {{api}}
+Content-Type: application/json
+
+{
+   "name": "microphone31",
+   "description":"gaming microphone31"
+}
+
+###
+
+GET {{api}}
+
+###
+GET {{api}}/6
+
+###update
+PUT {{api}}/1
+Content-Type: application/json
+
+{
+   "name": "update Lenovo laptop",
+   "description":"gaming microphone31",
+   "quantity": 300
+}
+
+###
+DELETE {{api}}/6
+
+###get total products
+GET {{api}}/count
